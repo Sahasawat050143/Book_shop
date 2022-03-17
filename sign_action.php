@@ -23,7 +23,7 @@
             echo "<script type='text/javascript'>alert('กรุณาป้อนรหัสผ่านให้เหมือนกัน'); window.location.href='sign_up.php';</script>";
         }
         else{
-            $sql = "INSERT INTO tbllogin(email,log_password)values('$_email','$_password') ";
+            $sql = "INSERT INTO tbllogin(email,log_password)values('$_email','$_password' ) ";
             
             if(mysqli_query($conn,$sql)){
                 echo "<script type='text/javascript'>alert('บันทึกรหัสผ่านเรียบร้อย'); window.location.href='index.php';</script>";
